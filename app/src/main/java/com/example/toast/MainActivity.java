@@ -16,8 +16,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void buttonClicked(View view) {
-        Toast myToast = Toast.makeText(getApplicationContext(), "Ура! Вспылающие сообщения работают", Toast.LENGTH_LONG);
-        myToast.setGravity(Gravity.TOP,0,0);
+        Toast myToast = Toast.makeText(getApplicationContext(), "Левая обезьянка", Toast.LENGTH_LONG);
+        myToast.show();
+    }
+    public void buttonClicked1(View view) {
+        Toast myToast = Toast.makeText(getApplicationContext(), "Обезьянка по центру", Toast.LENGTH_LONG);
+        myToast.show();
+    }
+    public void buttonClicked2(View view) {
+        Toast myToast = Toast.makeText(getApplicationContext(), "Правая обезьянка", Toast.LENGTH_LONG);
         myToast.show();
     }
 }

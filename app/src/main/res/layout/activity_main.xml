@@ -7,20 +7,40 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="409dp"
         android:layout_height="match_parent"
+        android:layout_marginTop="300dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <Button
-            android:id="@+id/buttonPush"
+        <ImageButton
+            android:id="@+id/imageButton1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
-            android:background="@drawable/_1"
+            android:layout_weight="1"
             android:onClick="buttonClicked"
-            android:text="@string/Button_push" />
+            app:srcCompat="@drawable/_1" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="277dp"
+            android:layout_weight="1"
+            android:onClick="buttonClicked1"
+            app:srcCompat="@drawable/_3" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="buttonClicked2"
+            app:srcCompat="@drawable/_2" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
